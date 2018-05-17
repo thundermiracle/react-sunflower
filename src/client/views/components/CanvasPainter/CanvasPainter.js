@@ -8,6 +8,9 @@ const styles = {
   rootDiv: {
     padding: 5,
   },
+  canvasDiv: {
+    textAlign: 'center',
+  },
   canvas: {
     marginTop: 20,
     border: 'solid 1px lightgrey',
@@ -71,7 +74,7 @@ class CanvasPainter extends PureComponent {
           drawShape={this.drawShape}
           handleChangeRadius={this.handleChangeRadius}
         />
-        <div>
+        <div style={styles.canvasDiv}>
           <canvas ref={this.setCanvasRef} width={heightWidth} height={heightWidth} style={styles.canvas} />
         </div>
       </div>

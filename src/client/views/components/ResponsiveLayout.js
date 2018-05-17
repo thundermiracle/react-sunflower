@@ -64,7 +64,7 @@ export const makeResponsiveLayout = (drawerWidth = 250) => {
     content: {
       backgroundColor: theme.palette.background.default,
       width: '100%',
-      padding: theme.spacing.unit * 4,
+      padding: theme.spacing.unit * 2,
       height: 'calc(100% - 64px)',
       marginTop: 64,
       overflow: 'auto',
