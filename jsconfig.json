@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": "./src/",
+        "paths": {
+            "lib/*": ["src/lib/*"],
+            "core/*": ["src/core/*"],
+            "views/*": ["src/client/views/*"],
+            "styles/*": ["src/client/views/styles/*"],
+            "components/*": ["src/client/views/components/*"],
+            "hoc/*": ["src/client/views/hoc/*"]
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

@@ -1,0 +1,42 @@
+# Official framework image. Look for the different tagged releases at:
+# https://hub.docker.com/r/library/node/tags/
+image: node:boron-alpine
+
+before_script:
+  - apk add --no-cache git
+  - yarn install
+  - yarn global add eslint
+
+# This folder is cached between builds
+# http://docs.gitlab.com/ce/ci/yaml/README.html#cache
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - test
+  - deploy
+
+unit_test:library:
+  stage: test
+  script:
+    - yarn test
+
+variables:
+  LOCAL: "./.statichtml"
+  SERVER: "./httpdocs"
+
+# Build and Deploy
+deploy:
+  image: node:boron-alpine
+  stage: deploy
+  before_script:
+    - yarn install
+    - yarn run export
+  script: 
+    - apk add --no-cache lftp
+    - lftp -c "set ftp:ssl-allow no; open -u $USERNAME,$PASSWORD $HOST; mirror -R $LOCAL $SERVER --parallel=10"
+  environment:
+    name: production
+  only:
+    - master
