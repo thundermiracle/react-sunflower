@@ -1,0 +1,8 @@
+# build output
+npm-debug.log
+.next/
+.statichtml/*
+
+# dependencies
+node_modules/
+
