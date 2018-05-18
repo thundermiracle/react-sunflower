@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Divider from 'material-ui/Divider';
-import { ListItem, ListItemText } from 'material-ui/List';
-// import ListItemText from 'material-ui/ListItemText';
+import ListItemText from 'material-ui/ListItemText';
+import ListItem from 'material-ui/ListItem';
 import { grey } from 'material-ui/colors';
 
 const styles = {

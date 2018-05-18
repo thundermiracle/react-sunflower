@@ -10,6 +10,8 @@
           "./src/"
         ],
         "alias": {
+          "material-ui": "@material-ui/core",
+          "material-ui-icons": "@material-ui/icons",
           "lib": "./src/lib",
           "core": "./src/core",
           "views": "./src/client/views",
