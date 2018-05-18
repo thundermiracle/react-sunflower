@@ -86,6 +86,7 @@ CanvasPainter.propTypes = {
   shapeType: PropTypes.oneOf([
     ShapeType.DotCircle,
     ShapeType.DotSpiral,
+    ShapeType.Sunflower,
   ]).isRequired,
   settings: PropTypes.object.isRequired,
 };

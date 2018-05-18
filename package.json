@@ -5,16 +5,16 @@
   "scripts": {
     "eslint": "eslint src/ --fix",
     "test": "npm run eslint",
-    "dev": "next ./src -p 3001",
+    "dev": "next ./src -p 3000",
     "export": "next build ./src && next export ./src -o .statichtml/"
   },
   "author": "thundermiracle",
   "license": "MIT",
   "dependencies": {
-    "material-ui": "^1.0.0-beta.47",
-    "material-ui-icons": "^1.0.0-beta.36",
+    "@material-ui/core": "^1.0.0",
+    "@material-ui/icons": "^1.0.0",
     "next": "^5.1.0",
-    "nextjs-mui-helper": "^0.2.8",
+    "nextjs-mui-helper": "next",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
@@ -28,9 +28,9 @@
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-react": "^1.1.7",
     "eslint-import-resolver-babel-module": "^4.0.0",
-    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0",
-    "react-hot-loader": "^4.1.3"
+    "eslint-plugin-react": "^7.8.2",
+    "react-hot-loader": "^4.2.0"
   }
 }
