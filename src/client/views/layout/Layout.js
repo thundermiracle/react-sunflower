@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import ResponsiveLayout from 'components/ResponsiveLayout';
 
+import LayoutHead from './LayoutHead';
 import DrawerHeader from './DrawerHeader';
 import DrawerMenu from './DrawerMenu';
 
@@ -24,6 +25,7 @@ const Layout = (props) => {
       drawerMenu={<DrawerMenu />}
       title={title}
     >
+      <LayoutHead title={title} />
       {children}
     </ResponsiveLayout>
   );
