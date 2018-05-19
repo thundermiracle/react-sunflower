@@ -3551,9 +3551,9 @@ next@^5.1.0:
     webpack-sources "1.1.0"
     write-file-webpack-plugin "4.2.0"
 
-nextjs-mui-helper@next:
-  version "1.0.0-rc.4"
-  resolved "https://registry.yarnpkg.com/nextjs-mui-helper/-/nextjs-mui-helper-1.0.0-rc.4.tgz#72b08139c0b3de81bc804f653352fd67471b2745"
+nextjs-mui-helper@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/nextjs-mui-helper/-/nextjs-mui-helper-1.0.0.tgz#39347f3ab78ffaa82cacf164667af7562074b062"
   dependencies:
     jss "^9.5.1"
     nprogress "^0.2.0"
