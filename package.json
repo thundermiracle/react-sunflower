@@ -1,6 +1,6 @@
 {
   "name": "react-sunflower",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "draw sunflower in react",
   "scripts": {
     "eslint": "eslint src/ --fix",
@@ -14,7 +14,7 @@
     "@material-ui/core": "^1.0.0",
     "@material-ui/icons": "^1.0.0",
     "next": "^5.1.0",
-    "nextjs-mui-helper": "next",
+    "nextjs-mui-helper": "^1.0.0",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"

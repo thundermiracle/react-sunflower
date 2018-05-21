@@ -1,8 +1,5 @@
 const PATH_MAP = [
   {
-    pathname: 'circle',
-  },
-  {
     pathname: 'spiral',
   },
   {
