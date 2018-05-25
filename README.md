@@ -1,6 +1,6 @@
 <h1 align="center">
 
-react-sunflower
+<p align="center"><img src="logo/RSver.png" alt="react-sunflower" height="200px"></p>
 
 </h1>
 
