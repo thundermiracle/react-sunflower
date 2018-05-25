@@ -6,7 +6,7 @@ import DrawerMenu from 'components/DrawerMenu';
 
 import PATH_MAP from 'client/PathMap';
 
-const MyDrawerMenu = () => {
+const LayoutDrawerMenu = () => {
   return (
     <DrawerMenu
       pathMap={PATH_MAP}
@@ -15,4 +15,4 @@ const MyDrawerMenu = () => {
   );
 };
 
-export default MyDrawerMenu;
+export default LayoutDrawerMenu;

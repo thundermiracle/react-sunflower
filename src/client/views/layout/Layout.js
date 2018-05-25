@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 import ResponsiveLayout from 'components/ResponsiveLayout';
 
 import LayoutHead from './LayoutHead';
-import DrawerHeader from './DrawerHeader';
-import DrawerMenu from './DrawerMenu';
+import LayoutDrawerHeader from './LayoutDrawerHeader';
+import LayoutDrawerMenu from './LayoutDrawerMenu';
 
 const Layout = (props) => {
   const { title, children } = props;
   
-  const drawerHeader = (
-    <DrawerHeader
+  const layoutdrawerHeader = (
+    <LayoutDrawerHeader
       packageInfo={{
         version: process.env.PKG_VERSION,
         name: process.env.PKG_NAME,
@@ -21,8 +21,8 @@ const Layout = (props) => {
 
   return (
     <ResponsiveLayout
-      drawerHeader={drawerHeader}
-      drawerMenu={<DrawerMenu />}
+      drawerHeader={layoutdrawerHeader}
+      drawerMenu={<LayoutDrawerMenu />}
       title={title}
     >
       <LayoutHead title={title} />
