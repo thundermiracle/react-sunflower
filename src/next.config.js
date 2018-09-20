@@ -1,5 +1,5 @@
 const PATH_MAP = require("./client/PathMap");
-const makeNextExportPathMap = require('nextjs-mui-helper/util/makeNextExportPathMap');
+const makeNextExportPathMap = require('next-mui-helper/util/makeNextExportPathMap').default;
 const { EnvironmentPlugin } = require('webpack');
 
 process.env.PKG_VERSION = process.env.npm_package_version;

@@ -64,12 +64,13 @@ class CanvasPainter extends PureComponent {
 
   render() {
     const { settings } = this.props;
+    const { radius } = this.state;
 
-    const heightWidth = parseInt(this.state.radius, 10) * 2;
+    const heightWidth = parseInt(radius, 10) * 2;
     return (
       <div style={styles.rootDiv}>
         <SettingsForm
-          defaultSettings={{ ...settings, radius: this.state.radius }}
+          defaultSettings={{ ...settings, radius }}
           drawSyncShape={this.drawSyncShape}
           drawShape={this.drawShape}
           handleChangeRadius={this.handleChangeRadius}

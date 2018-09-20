@@ -56,7 +56,9 @@ class SettingsForm extends PureComponent {
   }
 
   renderTextField = (stateName) => {
-    if (stateName == null || this.state[stateName] == null) return null;
+    if (stateName == null) return null;
+    const { [stateName]: sStateName } = this.state;
+    if (sStateName == null) return null;
 
     const changeFunc = stateName === 'radius' ? this.innerHandleChangeRadius : this.innerHandleChange;
 
@@ -65,7 +67,7 @@ class SettingsForm extends PureComponent {
         <TextField
           name={stateName}
           type="number"
-          value={this.state[stateName]}
+          value={sStateName}
           label={capitalizeFirstLetter(stateName)}
           margin="dense"
           fullWidth
@@ -93,12 +95,8 @@ class SettingsForm extends PureComponent {
           {anglePart}
           {deviationPart}
           <Grid item xs={6} md={3} className={classes.buttonDiv}>
-            <Button color="primary" onClick={this.innerDrawShape}>
-              Draw
-            </Button>
-            <Button color="secondary" onClick={this.innerDrawSyncShape}>
-              DrawSync
-            </Button>
+            <Button color="primary" onClick={this.innerDrawShape}>Draw</Button>
+            <Button color="secondary" onClick={this.innerDrawSyncShape}>DrawSync</Button>
           </Grid>
         </Grid>
       </Fragment>

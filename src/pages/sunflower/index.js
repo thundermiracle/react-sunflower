@@ -1,5 +1,4 @@
 import React from 'react';
-import withAll from 'hoc/withAll';
 
 import { ShapeType } from 'core/DrawFactory';
 
@@ -22,4 +21,4 @@ const Sunflower = () => {
   );
 };
 
-export default withAll(Sunflower);
+export default Sunflower;

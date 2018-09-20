@@ -78,11 +78,13 @@ export const makeResponsiveLayout = (drawerWidth = 250) => {
     };
 
     handleDrawerToggle = () => {
-      this.setState({ mobileOpen: !this.state.mobileOpen });
+      const { mobileOpen } = this.state;
+      this.setState({ mobileOpen: !mobileOpen });
     };
 
     render() {
-      const { classes, title, drawerHeader, drawerMenu, appbarProps, ...restProps } = this.props;
+      const { classes, title, drawerHeader, drawerMenu, appbarProps, children, ...restProps } = this.props;
+      const { mobileOpen } = this.state;
 
       const drawer = (
         <div>
@@ -118,7 +120,7 @@ export const makeResponsiveLayout = (drawerWidth = 250) => {
               <Drawer
                 type="temporary"
                 anchor="left"
-                open={this.state.mobileOpen}
+                open={mobileOpen}
                 classes={{
                   paper: classes.drawerPaper,
                 }}
@@ -143,7 +145,7 @@ export const makeResponsiveLayout = (drawerWidth = 250) => {
               </Drawer>
             </Hidden>
             <main className={classes.content}>
-              {this.props.children}
+              {children}
             </main>
           </div>
         </div>
