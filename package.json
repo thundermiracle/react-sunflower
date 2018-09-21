@@ -14,7 +14,7 @@
     "@material-ui/core": "^3.0.3",
     "@material-ui/icons": "^3.0.1",
     "next": "^6.1.2",
-    "next-mui-helper": "^1.0.4",
+    "next-mui-helper": "^1.0.5",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
