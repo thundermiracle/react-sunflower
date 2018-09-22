@@ -1,6 +1,6 @@
 {
   "name": "react-sunflower",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "draw sunflower in react",
   "scripts": {
     "eslint": "eslint src/ --fix",
@@ -11,26 +11,26 @@
   "author": "thundermiracle",
   "license": "MIT",
   "dependencies": {
-    "@material-ui/core": "^1.0.0",
-    "@material-ui/icons": "^1.0.0",
-    "next": "^5.1.0",
-    "nextjs-mui-helper": "^1.0.0",
-    "prop-types": "^15.6.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "@material-ui/core": "^3.0.3",
+    "@material-ui/icons": "^3.0.1",
+    "next": "^6.1.2",
+    "next-mui-helper": "^1.0.4",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.3",
+    "@babel/core": "^7.1.0",
+    "babel-eslint": "^9.0.0",
     "babel-plugin-module-resolver": "^3.1.1",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^16.1.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-config-react": "^1.1.7",
-    "eslint-import-resolver-babel-module": "^4.0.0",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.8.2",
-    "react-hot-loader": "^4.2.0"
+    "eslint-import-resolver-babel-module": "^5.0.0-beta.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "react-hot-loader": "^4.3.8"
   }
 }

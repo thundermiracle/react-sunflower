@@ -1,5 +1,4 @@
 import React from 'react';
-import withAll from 'hoc/withAll';
 
 import { ShapeType } from 'core/DrawFactory';
 
@@ -21,4 +20,4 @@ const DotSpiral = () => {
   );
 };
 
-export default withAll(DotSpiral);
+export default DotSpiral;
