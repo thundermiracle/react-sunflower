@@ -1,6 +1,6 @@
 # Official framework image. Look for the different tagged releases at:
 # https://hub.docker.com/r/library/node/tags/
-image: node:boron-alpine
+image: node:carbon-alpine
 
 before_script:
   - apk add --no-cache git
@@ -28,7 +28,7 @@ variables:
 
 # Build and Deploy
 deploy:
-  image: node:boron-alpine
+  image: node:carbon-alpine
   stage: deploy
   before_script:
     - yarn install
