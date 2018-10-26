@@ -3359,9 +3359,9 @@ neo-async@^2.5.0:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.1.tgz#acb909e327b1e87ec9ef15f41b8a269512ad41ee"
 
-next-mui-helper@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/next-mui-helper/-/next-mui-helper-1.1.0.tgz#00f402a5f2bceaeb689dbba6d77a265007f95161"
+next-mui-helper@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/next-mui-helper/-/next-mui-helper-1.1.1.tgz#7ab103d832d06d0829a33f12b925fba134bd0ab3"
   dependencies:
     jss "^9.8.7"
     nprogress "^0.2.0"
