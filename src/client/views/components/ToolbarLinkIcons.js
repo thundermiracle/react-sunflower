@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
 
-import IconButton from 'material-ui/IconButton';
-
-import Language from 'material-ui-icons/Language';
+import IconButton from '@material-ui/core/IconButton';
+import Language from '@material-ui/icons/Language';
 import GitHub from './GitHub';
 
 const ToolbarLinkIcons = () => {
