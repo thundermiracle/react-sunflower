@@ -3,8 +3,7 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
-            "material-ui/*": ["@material-ui/core/*"],
-            "material-ui-icons/*": ["@material-ui/icons/*"],
+            "config/*": ["config/*"],
             "lib/*": ["src/lib/*"],
             "core/*": ["src/core/*"],
             "client/*": ["src/client/*"],

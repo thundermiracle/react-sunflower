@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Divider from 'material-ui/Divider';
-import ListItemText from 'material-ui/ListItemText';
-import ListItem from 'material-ui/ListItem';
-import { grey } from 'material-ui/colors';
+import Divider from '@material-ui/core/Divider';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListItem from '@material-ui/core/ListItem';
+import { grey } from '@material-ui/core/colors';
 
 const styles = {
   menuRoot: {
